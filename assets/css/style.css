@@ -1,122 +1,118 @@
 /* Reset */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
-    background: #1a1a1a url('parchment_bg.jpg') repeat;
-    color: #fdf6e3;
-    line-height: 1.6;
+  font-family: 'Cormorant Garamond', serif;
+  background: linear-gradient(to bottom, #05010d, #0d0b2e, #120a25);
+  color: #fdf6e3;
+  line-height: 1.6;
+  background-image: url('../img/stars.png'),
+                    linear-gradient(to bottom, #05010d, #0d0b2e, #120a25);
+  background-repeat: repeat, no-repeat;
+  background-size: contain, cover;
+  animation: starsMove 60s linear infinite;
+}
+
+@keyframes starsMove {
+  from { background-position: 0 0, center; }
+  to { background-position: 500px 500px, center; }
 }
 
 /* Header */
 header {
-    background: #000;
-    color: #f1c40f;
-    padding: 20px;
-    text-align: center;
-    border-bottom: 3px solid #f1c40f;
+  height: auto; /* adjust dynamically to the logo */
+  background: none; /* remove background picture */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0; /* spacing around the logo */
+  border-bottom: 2px solid #221B3C; /* darker gold */
 }
 
 header .logo img {
-    filter: drop-shadow(0 0 10px #f1c40f);
+  filter: drop-shadow(0 0 12px #f1c40f);
+  animation: logoGlow 3s ease-in-out infinite alternate;
 }
 
-header nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    margin-top: 15px;
-    gap: 25px;
-}
-
-header nav a {
-    color: #fdf6e3;
-    text-decoration: none;
-    font-family: 'Cinzel', serif;
-    font-size: 1.1rem;
-    transition: color 0.3s ease;
-}
-
-header nav a:hover {
-    color: #f1c40f;
-    text-shadow: 0 0 8px #f1c40f;
-}
-
-/* Hero */
-.hero {
-    text-align: center;
-    padding: 80px 20px;
-    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
-    url('hogwarts_banner.jpg') center/cover no-repeat;
-    border-bottom: 2px solid #f1c40f;
-}
-
-.hero h1 {
-    font-family: 'Cinzel', serif;
-    font-size: 3rem;
-    color: #f1c40f;
-    margin-bottom: 15px;
-    text-shadow: 2px 2px 10px #000;
-}
-
-.hero p {
-    font-size: 1.2rem;
-    max-width: 700px;
-    margin: auto;
+@keyframes logoGlow {
+  from { filter: drop-shadow(0 0 5px #f1c40f); }
+  to { filter: drop-shadow(0 0 20px #f1c40f); }
 }
 
 /* Section */
 section {
-    padding: 50px 20px;
-    max-width: 1000px;
-    margin: auto;
+  padding: 50px 20px;
+  max-width: 1000px;
+  margin: auto;
 }
 
 h2, h3 {
-    font-family: 'Cinzel', serif;
-    margin-bottom: 20px;
-    color: #f1c40f;
-    text-align: center;
+  font-family: 'Cinzel', serif;
+  margin-bottom: 20px;
+  color: #f1c40f;
+  text-align: center;
 }
 
 /* Interactive Buttons */
 .interactive-buttons {
-    text-align: center;
+  text-align: center;
 }
 
 .button-group {
-    margin-top: 20px;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
 }
 
-button {
-    background-color: #2e2b5f;
-    border: 2px solid #f1c40f;
-    color: #fdf6e3;
-    font-family: 'Cinzel', serif;
-    font-size: 1.1rem;
-    padding: 12px 30px;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: all 0.3s ease;
+/* Card Links */
+.card-link {
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
 }
 
-button:hover {
-    background-color: #f1c40f;
-    color: #000;
-    transform: scale(1.05);
-    box-shadow: 0 0 10px #f1c40f;
+.magic-card {
+  background: #111;
+  border: 2px solid transparent; /* no border by default */
+  border-radius: 12px;
+  overflow: hidden;
+  width: 250px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
+  cursor: pointer;
 }
+
+.magic-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.magic-card .card-text {
+  text-align: center;
+  background-color: #2e2b5f;
+  color: #fdf6e3;
+  font-family: 'Cinzel', serif;
+  font-size: 1.1rem;
+  padding: 12px;
+}
+
+/* Hover Effect */
+.magic-card:hover {
+  transform: scale(1.05);
+  border: 2px solid #f1c40f; /* golden border appears */
+  box-shadow: 0 0 20px rgba(241, 196, 15, 0.6);
+}
+
 
 /* Footer */
 footer {
+<<<<<<< HEAD
     text-align: center;
     padding: 20px;
     background: #000;
@@ -214,3 +210,18 @@ footer {
         gap: 24px;
     }
 }
+=======
+  height: 140px;
+  background: url('../img/horizons_village.png') center top no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding-bottom: 10px;
+  border-top: 2px solid #221B3C;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+
+>>>>>>> main

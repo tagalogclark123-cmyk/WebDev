@@ -1,40 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Harry Potter Fanpage</title>
-    <link rel="stylesheet" href="assets/css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Harry Potter Fanpage</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=Cormorant+Garamond&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <!-- Header -->
-    <header>
+  <!-- Header -->
+  <header>
     <div class="logo">
-        <img src="harry_potter_logo.png" alt="Harry Potter Logo" width="150">
+      <img src="assets/img/harry_potter_logo.png" alt="Harry Potter Logo" width="180">
     </div>
+  </header>
 
-    </header>
-
-<!-- About Section -->
-    <section id="about">
+  <!-- About Section -->
+  <section id="about">
     <h2>About Harry Potter</h2>
-    <p>The Harry Potter series is a collection of fantasy novels written by J.K. Rowling. It follows the life of a young wizard, Harry Potter, and his adventures at Hogwarts School of Witchcraft and Wizardry.</p>
-    <p>It includes 7 books and 8 movies, creating a worldwide cultural phenomenon.</p>
-    </section>
+    <p>The <span class="highlight">Harry Potter series</span> is a spellbinding collection of fantasy novels by J.K. Rowling. It follows the journey of a young wizard, Harry Potter, and his magical years at Hogwarts School of Witchcraft and Wizardry.</p>
+    <p>Across <strong>7 books</strong> and <strong>8 films</strong>, fans have discovered the enchanting world of magic, courage, friendship, and the battle against the Dark Lord.</p>
+  </section>
 
-<!-- Interactive Buttons -->
-    <section class="interactive-buttons">
-    <h3>Explore More:</h3>
-    <button onclick="window.location.href='books.html'">Books</button>
-    <button onclick="window.location.href='movies.html'">Movies</button>
-    <button onclick="window.location.href='gallery.html'">Gallery</button>
-    </section>
+  <!-- Interactive Cards -->
+  <section class="interactive-buttons">
+    <h3>Explore the Wizarding World 🪄</h3>
+    <div class="button-group">
+      <a href="books.html" class="card-link">
+        <div class="magic-card">
+          <img src="assets/img/book.jpg" alt="Harry Potter Books">
+          <div class="card-text">Books</div>
+        </div>
+      </a>
+      <a href="movies.html" class="card-link">
+        <div class="magic-card">
+          <img src="assets/img/movies.jpg" alt="Harry Potter Movies">
+          <div class="card-text">Movies</div>
+        </div>
+      </a>
+      <a href="gallery.html" class="card-link">
+        <div class="magic-card">
+          <img src="assets/img/gallery.jpg" alt="Harry Potter Gallery">
+          <div class="card-text">Gallery</div>
+        </div>
+      </a>
+    </div>
+  </section>
 
-<!-- Footer -->
-    <footer>
-    <p>&copy; Mischief Managed </p>
-    </footer>
+
+  <!-- Footer -->
+  <footer>
+    <p>Mischief Managed ⚡</p>
+  </footer>
 
 </body>
 </html>
