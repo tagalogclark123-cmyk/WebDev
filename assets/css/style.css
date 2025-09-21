@@ -246,7 +246,7 @@ body {
 .about-text p {
   font-size: 1.1rem;
   line-height: 1.7;
-  color: #333;
+  color: #fff; /* changed from #333 to white */
 }
 
 .about-text .highlight {
