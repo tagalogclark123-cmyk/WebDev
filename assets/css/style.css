@@ -193,6 +193,94 @@ body {
     text-align: center;
 }
 
+Here’s the corrected version of your snippet:
+
+/* Footer */
+footer {
+  height: 140px;
+  background: url('../img/horizons_village.png') center top no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding-bottom: 10px;
+  border-top: 2px solid #221B3C;
+  font-size: 0.9rem;
+}
+
+/* Movies Section */
+#movies {
+  padding: 40px;
+  text-align: center;
+}
+
+#movies h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #fdd835; /* gold */
+}
+
+#movies p {
+  margin-bottom: 30px;
+  font-size: 1.2rem;
+  color: #fff;
+}
+
+/* Movie Grid */
+.movie-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  justify-items: center;
+}
+
+/* Movie Card */
+.movie-card {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.6);
+  transition: transform 0.3s ease;
+}
+
+.movie-card:hover {
+  transform: scale(1.05);
+}
+
+.movie-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.movie-card p {
+  margin-top: 10px;
+  font-size: 1rem;
+  color: #fff;
+}
+
+.back-btn.top {
+  margin-bottom: 20px;
+  text-align: left; /* para left aligned */
+}
+
+.back-btn.top a {
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: #fdd835;
+  color: #000;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.back-btn.top a:hover {
+  background-color: #ffeb3b;
+  transform: scale(1.05);
+}
+
+
 /* =========================
    About Section Styling
    ========================= */
